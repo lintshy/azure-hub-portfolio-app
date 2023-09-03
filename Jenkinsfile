@@ -12,7 +12,7 @@ pipeline {
         }
         stage('Deployment') { 
             steps {
-                azureWebAppPublish azureCredentialsId: '044bbc8b-d844-4cfb-a3ce-c92f4c39b93e',
+                azureWebAppPublish azureCredentialsId: '23a1e69c-1c9c-4979-a1f8-a9a822452633',
                    resourceGroup: 'com-btr-rgp-compute-001', appName: 'com-btr-awp-compute-001',
                    filePath: '**/*.js,**/*.json,**/*.png,**/*.html,**/*.ico'
             }
